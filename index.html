@@ -5,40 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S4R Quality Cars Limited</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to S4R Quality Cars Limited</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="hero">
+            <h1>Welcome to S4R Quality Cars Limited</h1>
+            <p>Your destination for premium vehicles</p>
+        </div>
     </header>
     <main>
-        <section id="home">
-            <h2>Your Satisfaction is Our Priority</h2>
-            <p>At S4R Quality Cars Limited, we provide the best quality cars to ensure our customers leave happy and satisfied.</p>
+        <section class="featured-cars">
+            <h2>Featured Cars</h2>
+            <div class="car-card">
+                <img src="car1.jpg" alt="Car 1">
+                <h3>Car Model 1</h3>
+                <p>Description of Car Model 1</p>
+                <span>Price: $XX,XXX</span>
+            </div>
+            <div class="car-card">
+                <img src="car2.jpg" alt="Car 2">
+                <h3>Car Model 2</h3>
+                <p>Description of Car Model 2</p>
+                <span>Price: $XX,XXX</span>
+            </div>
+            <!-- Add more car cards as necessary -->
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a family-owned business dedicated to quality and customer service.</p>
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote>
+                <p>Great service! Highly recommend!</p>
+                <cite>- Customer A</cite>
+            </blockquote>
+            <blockquote>
+                <p>Exceptional quality and support!</p>
+                <cite>- Customer B</cite>
+            </blockquote>
+            <!-- Add more testimonials as necessary -->
         </section>
-        <section id="services">
+        <section class="services">
             <h2>Our Services</h2>
             <ul>
                 <li>Car Sales</li>
-                <li>Car Leasing</li>
-                <li>Car Maintenance</li>
                 <li>Financing Options</li>
+                <li>Maintenance and Support</li>
             </ul>
         </section>
-        <section id="contact">
+        <section class="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing you with the best quality cars at the most competitive prices.</p>
+        </section>
+        <section class="contact">
             <h2>Contact Us</h2>
-            <p>For inquiries, please email us at <a href="mailto:info@s4rcars.com">info@s4rcars.com</a>.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="map"></div> <!-- Placeholder for Google Maps -->
         </section>
     </main>
     <footer>
