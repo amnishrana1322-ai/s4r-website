@@ -4,81 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S4R Quality Cars Limited</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 20px 0; text-align: center; }
-        .hero { background: #f4f4f4; padding: 50px 20px; text-align: center; }
-        .featured-cars, .testimonials, .inventory, .services, .about, .contact, footer { padding: 20px; }
-        .car { display: inline-block; width: 30%; margin: 10px; padding: 15px; border: 1px solid #ddd; }
-        .testimonial { font-style: italic; margin: 15px 0; }
-        footer { background: #333; color: #fff; text-align: center; padding: 10px 0; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>S4R Quality Cars Limited</h1>
+        <h1>Welcome to S4R Quality Cars Limited</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section class="hero">
-        <h2>Your Dream Car Awaits</h2>
-        <p>Discover our exclusive selection of quality vehicles.
-        <button onclick="scrollToInventory()">View Inventory</button>
-    </section>
-
-    <section class="featured-cars">
-        <h2>Featured Cars</h2>
-        <div class="car">Car 1: <strong>$20,000</strong></div>
-        <div class="car">Car 2: <strong>$25,000</strong></div>
-        <div class="car">Car 3: <strong>$30,000</strong></div>
-    </section>
-
-    <section class="testimonials">
-        <h2>Testimonials</h2>
-        <p class="testimonial">"Best car buying experience!" - John Doe</p>
-        <p class="testimonial">"Loved my new car!" - Jane Smith</p>
-    </section>
-
-    <section class="inventory">
-        <h2>Our Inventory</h2>
-        <button onclick="showInventory()">Show Inventory</button>
-    </section>
-
-    <section class="services">
-        <h2>Services</h2>
-        <ul>
-            <li>Financing</li>
-            <li>Vehicle Maintenance</li>
-            <li>Car Insurance</li>
-        </ul>
-    </section>
-
-    <section class="about">
-        <h2>About Us</h2>
-        <p>We are committed to providing quality cars and exceptional service.</p>
-    </section>
-
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
-
+    <main>
+        <section id="home">
+            <h2>Your Satisfaction is Our Priority</h2>
+            <p>At S4R Quality Cars Limited, we provide the best quality cars to ensure our customers leave happy and satisfied.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a family-owned business dedicated to quality and customer service.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Car Sales</li>
+                <li>Car Leasing</li>
+                <li>Car Maintenance</li>
+                <li>Financing Options</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries, please email us at <a href="mailto:info@s4rcars.com">info@s4rcars.com</a>.</p>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2026 S4R Quality Cars Limited</p>
+        <p>&copy; 2026 S4R Quality Cars Limited. All rights reserved.</p>
     </footer>
-
-    <script>
-        function scrollToInventory() {
-            window.scrollTo({ top: document.querySelector('.inventory').offsetTop, behavior: 'smooth' });
-        }
-        function showInventory() {
-            alert('Showing all available cars');
-        }
-    </script>
 </body>
 </html>
